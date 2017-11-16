@@ -1,7 +1,7 @@
 # Copy everything from nginx-alpine into data container to invert the layers.
 # This allows the server to be updated without repulling the data layer.
 
-FROM nginx-alpine
+FROM nginx:alpine
 RUN echo hi
 
 FROM scratch
