@@ -4,7 +4,7 @@
 FROM nginx:alpine
 RUN echo hi
 
-FROM provision-baseos:centos-7-1708-x86_64
+FROM kfox1111/provision-baseos:centos-7-1708-x86_64
 COPY --from=0 / /
 
 # Force everything to be a download.
